@@ -8,3 +8,7 @@ class CompleterStyle:
         self.success = success
         self.error = error
         self.info = info
+
+    @staticmethod
+    def default():
+        return CompleterStyle()
