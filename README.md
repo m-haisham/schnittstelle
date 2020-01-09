@@ -25,6 +25,12 @@ from schnittstelle import decorators
 [✓] complete
 [X] fail
 ```
+
+While completer is drawing to `print` use
+```python
+loader.print('string to print')
+```
+
 * #### Use
 
     ##### `with` statement
