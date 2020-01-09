@@ -28,7 +28,7 @@ from schnittstelle import decorators
 
 While completer is drawing to `print` use
 ```python
-loader.print('string to print')
+completer.print('string to print')
 ```
 
 * #### Use
