@@ -38,21 +38,21 @@ completer.print('string to print')
     > Recommended
        
     ```python
-      with Completer(message='Dummy bar') as completer:
+      with Completer('Dummy') as completer:
         # code
         pass
     ```
   
     The object will auto complete when on exiting `with` statement
     
-    You may also exit using `completer.complete` or `completer.fail()`
+    You may also exit using `completer.complete()` or `completer.fail()`
     
     ##### Decorator
     
     ```python
     from schnittstelle import decorators
     
-    @decorators.Completer(message='foo bar')
+    @decorators.Completer('foo bar')
     def foo(s):
         # code
     ``` 
@@ -66,14 +66,14 @@ completer.print('string to print')
     ##### Inline
     
     ```python
-    completer = Completer().init()
+    completer = Completer('').init()
 
     # code
     
     completer.complete() # or completer.fail()
     ```   
     
-    Exit the completer using `completer.complete` or `completer.fail()`
+    Exit the completer using `completer.complete()` or `completer.fail()`
     
     ##### Runnable
        
@@ -167,7 +167,7 @@ loader.print('string to print')
   
     The bar will auto complete when on exiting `with` statement
     
-    You may also exit using `loader.complete` or `loader.fail()`
+    You may also exit using `loader.complete()` or `loader.fail()`
     
     ##### Decorator
     
@@ -195,7 +195,7 @@ loader.print('string to print')
     loader.complete() # or loader.fail()
     ```   
     
-    Exit the progress bar using `loader.complete` or `loader.fail()`
+    Exit the progress bar using `loader.complete()` or `loader.fail()`
     
     ##### Runnable
        
