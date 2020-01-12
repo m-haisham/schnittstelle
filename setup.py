@@ -20,9 +20,12 @@ setup(
     classifiers=[
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.7',
+        "Operating System :: OS Independent",
     ],
     license="MIT license",
     keywords='console interface progress',
+
+    url='https://github.com/mHaisham/schnittstelle',
     project_urls={
       'Source code': 'https://github.com/mHaisham/schnittstelle'
     },
